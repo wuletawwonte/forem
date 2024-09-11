@@ -32,16 +32,26 @@ blockquote pre.highlight {
 
   code {
     font-size: 100%;
-    padding: 0;
+    padding: 0 var(--su-2) 0 0;
+
+    @media(min-width: $breakpoint-m) {
+      padding: 0 var(--su-6) 0 0;
+    }
   }
 }
 
 div.highlight {
   position: relative;
+  padding: 0;
 
   // this a way to separate scroll of long code & icons in panel
   .highlight {
     overflow: auto;
+    padding: var(--su-2);
+
+    @media (min-width: $breakpoint-m) {
+      padding: var(--su-6);
+    }
   }
 }
 
